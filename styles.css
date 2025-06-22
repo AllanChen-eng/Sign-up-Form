@@ -1,0 +1,41 @@
+body {
+  display: flex;
+}
+.sign-up {
+  display: flex;
+  flex-direction: column;
+}
+div {
+  background-color: gray;
+  padding: 1px;
+  flex: auto;
+}
+.logo {
+    background-color: lightblue;
+    width: 100px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+.slogan{
+    position: absolute;
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.quote-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.author{
+    float: right;
+    font-style: italic;
+}
+.signup-form{
+    background-color: white;
+}

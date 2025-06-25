@@ -47,6 +47,10 @@ body {
   background-color: lightgray;
 }
 
+.quote{
+    margin: 10px var(--universal-text-margin) 0 var(--universal-text-margin);
+}
+
 .author {
   float: right;
   font-style: italic;

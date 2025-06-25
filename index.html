@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Document</title>
-          <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card">
+    <div id="logo">
+      <p class="slogan">Slogan</p>
+    </div>
 
-          <div class="logo">
-            <p class="slogan">Slogan</p>
-          </div>
-          <div class="sign-up">
-                    <div class="quote-container">
-                              <p class="quote">Remind yourself what you had been through and had the strength to endure
-                              <br>
-                              <span class="author">-Marcus Aurelius</span>
-                              </p>
-                    </div>
-                    <div class="signup-form">
-                        <p>
-                            <label for="">First name</label>
-                            <input type="text">
-                        </p>
-                        <p>
-                            <label for="">Last Name</label>
-                            <input type="text">
-                        </p>
-                        <p>
-                            <label for="">Email</label>
-                            <input type="text">
-                        </p>
-                        <p>
-                            <label for="">Phone Number</label>
-                            <input type="text">
-                        </p>
-                        <p>
-                            <label for="">Password</label>
-                            <input type="text">
-                        </p>
-                        <p>
-                            <label for="">Confirm Password</label>
-                            <input type="text">
-                        </p>
-                    </div>
-                    <div class="createAccount">
-                        <button type="button"> Create Account </button>
-                        <p> Already have an account? <a href="">Sign in.</a></p>
-                    </div>
-          </div>
-</body>
+    <div id="sign-up">
+      <div id="quote-container">
+        <p class="quote">
+          "Remind yourself what you had been through and had the strength to
+          endure."
+          <br />
+          <span class="author">-Marcus Aurelius</span>
+        </p>
+      </div>
+
+      <div id="signup-section">
+        <form id="form" action="">
+          <p class="input-line">
+            <label for="fName">First Name</label>
+            <input type="text" id="fName" name="first_name" />
+          </p>
+          <p class="input-line">
+            <label for="lName">Last Name</label>
+            <input type="text" id="lName" name="last_name" />
+          </p>
+          <p class="input-line">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </p>
+          <p class="input-line">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" />
+          </p>
+          <p class="input-line">
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="pwd" />
+          </p>
+          <p class="input-line">
+            <label for="pwd2">Confirm Password</label>
+            <input type="password" id="pwd2" name="pwd2" />
+          </p>
+        </form>
+      </div>
+
+      <div id="createAccount">
+        <button class="createAccountBtn" type="submit">Create Account</button>
+        <p class="createAccount">
+          Already have an account? <a style="color: #596d48">Sign in.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  </body>
 </html>

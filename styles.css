@@ -1,41 +1,90 @@
+html,
+body {
+  height: 100%;
+}
+:root {
+  --universal-text-margin: 5ch;
+}
+
 body {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.sign-up {
+
+.card {
+  display: flex;
+}
+
+#sign-up {
   display: flex;
   flex-direction: column;
 }
-div {
-  background-color: gray;
-  padding: 1px;
+
+#logo {
+  background-color: lightblue;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.slogan {
+  position: absolute;
+  top: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#quote-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+}
+
+.author {
+  float: right;
+  font-style: italic;
+}
+
+#signup-section {
+  background-color: white;
+  display: flex;
+  flex: none;
+}
+
+#form {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: none;
+  margin: 10px 0 0 var(--universal-text-margin);
+}
+
+.input-line {
+  width: 200px;
+}
+
+#createAccount {
+  background-color: lightgray;
   flex: auto;
 }
-.logo {
-    background-color: lightblue;
-    width: 100px;
-    height: 400px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-.slogan{
-    position: absolute;
-    top: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
+
+.createAccount {
+  margin-left: var(--universal-text-margin);
 }
-.quote-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.author{
-    float: right;
-    font-style: italic;
-}
-.signup-form{
-    background-color: white;
+
+.createAccountBtn {
+  margin-top: 10px;
+  margin-left: var(--universal-text-margin);
+  color: white;
+  background-color: #596d48;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
 }

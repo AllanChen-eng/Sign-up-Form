@@ -8,56 +8,60 @@
   </head>
   <body>
     <div class="card">
-    <div id="logo">
-      <p class="slogan">Slogan</p>
+      <div id="logo">
+        <p class="slogan">Showcasing my knowledge of relative and absolute positioning!</p>
+        <!-- 480x640 or 4:3 ratio-->
+        <img src="./Hawaii.jpeg" alt="image 1" />
+      </div>
+
+      <div id="sign-up">
+        <div id="quote-container">
+          <p class="quote">
+            "Remind yourself what you had been through and had the strength to
+            endure."
+            <br />
+            <span class="author">-Marcus Aurelius</span>
+          </p>
+        </div>
+
+        <div id="signup-section">
+          <form id="form" action="">
+            <p class="input-line">
+              <label for="fName">First Name<br /></label>
+              <input type="text" id="fName" name="first_name" />
+            </p>
+            <p class="input-line">
+              <label for="lName">Last Name<br /></label>
+              <input type="text" id="lName" name="last_name" />
+            </p>
+            <p class="input-line">
+              <label for="email">Email<br /></label>
+              <input type="email" id="email" name="email" />
+            </p>
+            <p class="input-line">
+              <label for="phone">Phone Number<br /></label>
+              <input type="tel" id="phone" name="phone" />
+            </p>
+            <p class="input-line">
+              <label for="pwd">Password<br /></label>
+              <input type="password" id="pwd" name="pwd" required />
+            </p>
+            <p class="input-line">
+              <label for="pwd2">Confirm Password<br /></label>
+              <input type="password" id="pwd2" name="pwd2" required />
+            </p>
+          </form>
+        </div>
+
+        <div id="create-account">
+          <button class="createAccountBtn" type="submit" form="form">
+            Create Account
+          </button>
+          <p class="createAccount">
+            Already have an account? <a style="color: #596d48">Sign in.</a>
+          </p>
+        </div>
+      </div>
     </div>
-
-    <div id="sign-up">
-      <div id="quote-container">
-        <p class="quote">
-          "Remind yourself what you had been through and had the strength to
-          endure."
-          <br />
-          <span class="author">-Marcus Aurelius</span>
-        </p>
-      </div>
-
-      <div id="signup-section">
-        <form id="form" action="">
-          <p class="input-line">
-            <label for="fName">First Name<br></label>
-            <input type="text" id="fName" name="first_name" />
-          </p>
-          <p class="input-line">
-            <label for="lName">Last Name<br></label>
-            <input type="text" id="lName" name="last_name" />
-          </p>
-          <p class="input-line">
-            <label for="email">Email<br></label>
-            <input type="email" id="email" name="email" />
-          </p>
-          <p class="input-line">
-            <label for="phone">Phone Number<br></label>
-            <input type="tel" id="phone" name="phone" />
-          </p>
-          <p class="input-line">
-            <label for="pwd">Password<br></label>
-            <input type="password" id="pwd" name="pwd" required />
-          </p>
-          <p class="input-line">
-            <label for="pwd2">Confirm Password<br></label>
-            <input type="password" id="pwd2" name="pwd2" required/>
-          </p>
-        </form>
-      </div>
-
-      <div id="createAccount">
-        <button class="createAccountBtn" type="submit" form="form">Create Account</button>
-        <p class="createAccount">
-          Already have an account? <a style="color: #596d48">Sign in.</a>
-        </p>
-      </div>
-    </div>
-  </div>
   </body>
 </html>

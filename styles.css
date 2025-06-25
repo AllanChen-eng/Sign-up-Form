@@ -12,19 +12,31 @@ body {
   justify-content: center;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: #1e1e1e;
+    }
+  }
+
+input:focus,
+textarea:focus {
+  background: rgb(0 0 0 / 10%);
+  border-radius: 5px;
+}
+
 .card {
   display: flex;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 #sign-up {
   display: flex;
   flex-direction: column;
+  width: 800px;
 }
 
 #logo {
   background-color: lightblue;
-  width: 400px;
-  height: 400px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -32,7 +44,7 @@ body {
 
 .slogan {
   position: absolute;
-  top: 10px;
+  top: 20%;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 5px 10px;
@@ -45,10 +57,12 @@ body {
   align-items: center;
   justify-content: center;
   background-color: lightgray;
+  flex: 1;
 }
 
 .quote{
     margin: 10px var(--universal-text-margin) 0 var(--universal-text-margin);
+    font-size: 32px;
 }
 
 .author {
@@ -59,7 +73,7 @@ body {
 #signup-section {
   background-color: white;
   display: flex;
-  flex: none;
+  flex: 1;
 }
 
 #form {
@@ -74,9 +88,9 @@ body {
   width: 200px;
 }
 
-#createAccount {
+#create-account {
   background-color: lightgray;
-  flex: auto;
+  flex: 1;
 }
 
 .createAccount {
